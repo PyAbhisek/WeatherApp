@@ -279,6 +279,9 @@ input {
   .forecast-item {
     min-width: calc(50% - 0.5rem);
   }
+  .search {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -293,9 +296,7 @@ input {
 
   }
 
-  .search {
-    flex-direction: column;
-  }
+ 
 
 }
 
