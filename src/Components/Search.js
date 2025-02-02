@@ -5,12 +5,11 @@ const Search =()=>{
     const [input,setInput] = useState('')
     const handleSubmit = ()=>{
         setUserInput(input)
-        localStorage.setItem('city',input)
     }
     return(
-        <div>
-            <input type="text" placeholder="Enter Your City" onChange={(e)=>setInput(e.target.value)}/>
-            <button type="Submit" onClick={handleSubmit}>Check</button>
+        <div className="search-bar">
+            <input type="text" placeholder="Enter Your City" onChange={(e)=>setInput(e.target.value)} value={input}/>
+            <button type="Submit" className="button" onClick={handleSubmit}>Check</button>
         </div>
     )
 }
